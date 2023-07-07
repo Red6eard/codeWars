@@ -5,8 +5,11 @@
 // // Помните о проверке ввода.
 // Если вместо массива задано пустое значение ( null, None, Nothing и т. д.), или данный массив является пустым списком или списком только с 1 элементом, вернуть 0.
 function sumArray(array) {
-  const min = Math.min(...array);
-  const max = Math.max(...array);
+  if(array === null){
+    return 0
+  }
+  const min = Math.min(array);
+  const max = Math.max(array);
   let sum = 0;
   
   for (let i = 0; i < array.length; i++) {
@@ -14,9 +17,12 @@ function sumArray(array) {
     || 
     array[i] === max){
       continue
-  }
+  };
   sum += array[i];
-  console.log(sum)
+  console.log(sum);
+  };
+  if (array.length <= 1) {
+    console.log(0)
   }
 };
-sumArray([1,2,5,10,4,7]);
+sumArray(null);
