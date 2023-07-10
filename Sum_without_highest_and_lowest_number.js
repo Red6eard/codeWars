@@ -42,3 +42,4 @@ function sumArray(array) {
   sortedArr.pop();
 
   return sortedArr.reduce((sum, num) => sum + num, 0);
+}
