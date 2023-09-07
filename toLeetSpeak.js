@@ -41,24 +41,12 @@ const alphabet = {
 };
 
 let string = 'HELLO WORLD';
-/*
+
 function toLeetSpeak(str) {
-  str = str.split("");
-  for (let i = 0; i < str.length; i++) {
-    const key = str[i];
-    console.log(key);
-    if (key in alphabet) {
-      str = alphabet[key];
-      
-    }
-    //return str
-    console.log(str)
+  str = str.split("").map(el => alphabet[el] || el).join("");
+  return str
   }
-  
-  //return str;
-  
-  }*/
-  
+  /*
   function toLeetSpeak(str) {
     let result = '';
     for (let i = 0; i < str.length; i++) {
@@ -68,5 +56,5 @@ function toLeetSpeak(str) {
     }
     return result;
 };
-
+*/
 console.log(toLeetSpeak(string));
