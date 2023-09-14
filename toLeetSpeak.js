@@ -40,10 +40,10 @@ const alphabet = {
   Z : '2'
 };
 
-let string = 'HELLO WORLD';
+let string = 'HELLo WORLD';
 
 function toLeetSpeak(str) {
-  str = str.split("").map(el => alphabet[el] || el).join("");
+  str = str.toUpperCase().split("").map(el => alphabet[el] || el).join("");
   return str
   }
   /*
