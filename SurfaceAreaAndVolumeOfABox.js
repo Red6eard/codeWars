@@ -4,4 +4,6 @@
 
 function getSize(width, height, depth){
     
-}
+};
+
+console.log(getSize());
