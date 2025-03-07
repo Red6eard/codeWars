@@ -3,7 +3,7 @@
 */
 
 function getSize(width, height, depth){
-    let area = (width * height + width*depth+ height*depth)*2;
+    let area = (width * height + width * depth+ height * depth)*2;
     let volume = (width * height * depth);
     return [area, volume]
 };
