@@ -3,7 +3,9 @@
 */
 
 function getSize(width, height, depth){
-    
+    let area = (width * height + width*depth+ height*depth)*2;
+    let volume = (width * height * depth);
+    return [area, volume]
 };
 
-console.log(getSize());
+console.log(getSize(2,3,5));
