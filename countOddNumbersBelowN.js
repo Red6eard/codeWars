@@ -8,4 +8,6 @@
 */
 function oddCount(n) {
   // your code here
-}
+};
+
+console.log();
