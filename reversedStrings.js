@@ -4,6 +4,9 @@
 'word' => 'drow'
 */
 
-function solution(str) {
-  
-}
+let solution = (str) => str.split("").reverse();
+
+console.log(solution("world"));
+
+// делаем из слова массив методом split()
+// переворачиваем массив методом reverse()
