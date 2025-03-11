@@ -6,8 +6,17 @@
 7 - > 3(because odd numbers below 7 are[1, 3, 5])
 15 - > 7(because odd numbers below 15 are[1, 3, 5, 7, 9, 11, 13])
 */
-function oddCount(n) {
-  // your code here
+let oddCount = (n) => {
+  let arr = [];
+  for (let i = 0; i < n; i++) {
+    if (i % 2 !== 0) {
+      arr.push(i);
+    };
+  };
+  return arr.length;
 };
 
-console.log();
+console.log(oddCount(7));
+// создать пустой массив
+// добавить в него нечетные числа от 0 до n
+// вернуть длинну этого массива
