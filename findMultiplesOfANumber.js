@@ -10,8 +10,14 @@
 n = 2; limit = 6 --> [2, 4, 6]
 n = 2; limit = 5 --> [2, 4]
 */
-function findMultiples(integer, limit) {
-  
-}
+function findMultiples(n, limit) {
+  let arr = [];
+  for (let i = 1; i <= limit; i++) {
+    if (i % n === 0) {
+      arr.push(i);
+    };
+  };
+  return arr;
+};
 
-console.log()
+console.log(findMultiples(2,7))
