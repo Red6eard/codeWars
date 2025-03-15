@@ -11,7 +11,16 @@
 */
 
 function solution(a, b) {
-  
+  let strA = a.length;
+  let strB =b.length;
+  if (strA > strB) {
+    return b+a+b
+  } else {
+    return a+b+a
+  };
 };
 
-console.log();
+// сократим с тернарником:
+let sol = (a,b) => a.length > b.length ? b+a+b : a+b+a;
+
+console.log(sol('world', '212'));
