@@ -10,5 +10,5 @@ function squareSum(numbers){
          sum += numbers[i]**2;
     };
     return sum;
-}
+};
 console.log(squareSum([1,2,3]));
