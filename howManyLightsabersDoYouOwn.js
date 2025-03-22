@@ -7,9 +7,20 @@
 Например ( Вход -> Выход ):
 "anyone else" --> 0
 "Zach" --> 18
-*/
+
 
 function howManyLightsabersDoYouOwn(name) {
-    return
+    if (name === 'Zach') {
+      return 18
+    } else {
+      return 0
+    }
   }
-console.log(1234);
+console.log(howManyLightsabersDoYouOwn('Zach'));
+*/
+// перепишем на тернарник
+
+let howManyLightsabersDoYouOwn = (name) => name === 'Zach' ? 18 : 0 ;
+
+console.log(howManyLightsabersDoYouOwn(12))
+
