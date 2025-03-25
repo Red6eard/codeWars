@@ -13,10 +13,16 @@ result = 7(remainder of `72 / 13`)
 n = 0
 m = -1
 result = 0(remainder of `0 / -1`)
-*/
-function remainder(n, m) {
-  // Divide the larger argument by the smaller argument and return the remainder
-  
-};
 
-console.log()
+function remainder(n, m) {
+  if (n > m) {
+    return n % m;
+  } else {
+    return m % n;
+  };
+};
+*/
+// перепишем на тернарнике
+let remainder = (n, m) => n > m ? n%m : m%n;
+
+console.log(remainder(13,5))
