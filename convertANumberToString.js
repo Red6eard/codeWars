@@ -6,8 +6,6 @@
 999-- > "999" -
 100-- > "-100"
 */
-function numberToString(num) {
-  // Return a string of the number here!
-};
+let numberToString = num => num.toString();
 
-console.log()
+console.log(numberToString(1234))
