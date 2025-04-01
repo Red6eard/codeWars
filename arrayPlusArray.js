@@ -4,7 +4,13 @@ P.S. Каждый массив содержит только целые числ
 */
 
 function arrayPlusArray(arr1, arr2) {
-  return arr1 + arr2;
-}
+  let sumArr1 = arr1.reduce((sum,el)=>sum+el,0);
+  let sumArr2 = arr2.reduce((sum,el)=>sum+el,0);
+  return sumArr1 + sumArr2;
+};
 
-console.log();
+let a1 = [2,4,6];
+let a2 = [1,3,5]
+
+
+console.log(arrayPlusArray(a1,a2));
