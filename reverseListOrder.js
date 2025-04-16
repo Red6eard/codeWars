@@ -6,7 +6,8 @@
 * [1, 2, 3, 4]  -> [4, 3, 2, 1]
 * [9, 2, 0, 7]  -> [7, 0, 2, 9]
 */
-let reverseList = list => list.reverse();
+//let reverseList = list => list.reverse(); -  решение верное, но меняет исходный массив
+let reverseList = list => [...list].reverse(); // с помощью спред оператора [...] создаём копию массива, такое решение будет предпочтительнее
 let arr = [7, 0, 2, 9];
 
 console.log(reverseList(arr));
