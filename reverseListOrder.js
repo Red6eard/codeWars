@@ -6,7 +6,7 @@
 * [1, 2, 3, 4]  -> [4, 3, 2, 1]
 * [9, 2, 0, 7]  -> [7, 0, 2, 9]
 */
+let reverseList = list => list.reverse();
+let arr = [7, 0, 2, 9];
 
-
-
-console.log();
+console.log(reverseList(arr));
