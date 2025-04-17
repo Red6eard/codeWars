@@ -28,4 +28,4 @@ function sum(numbers) {
 
 let num = [1.1, 2.2, 3.3];
 
-console.log(sum(num))
+console.log(sum(num));
