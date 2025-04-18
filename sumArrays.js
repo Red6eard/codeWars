@@ -23,9 +23,15 @@
 */
 
 function sum(numbers) {
-  return 0
+  let summa = 0;
+  if (numbers.length < 1) {
+    summa = 0;
+  } else {
+    numbers.forEach(num => {summa += num;})
+  };
+  return summa;
 };
 
-let num = [1.1, 2.2, 3.3];
+let num = [];
 
 console.log(sum(num));
