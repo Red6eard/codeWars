@@ -11,8 +11,10 @@ ball2.ballType     //=> "super"
 
 */
 
-var Ball = function(ballType) {
-  // your code goes here
+let Ball = function(ballType) {
+  this.ballType = ballType||'regular';
 };
-
-console.log()
+const ball1 = new Ball();
+const ball2 = new Ball('super')
+console.log(ball1.ballType);
+console.log(ball2.ballType);
