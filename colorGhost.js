@@ -10,8 +10,14 @@ ghost.color //=> "white" or "yellow" or "purple" or "red"
 
 */
 
+
 let Ghost = function() {
-  // your code goes here
+  let colorArr = ['white', 'yellow', 'purple', 'red'];
+  this.color = colorArr[Math.floor(Math.random()*colorArr.length)];
 };
 
-console.log()
+ghost1 = new Ghost;
+ghost2 = new Ghost;
+
+console.log(ghost1);
+console.log(ghost2);
