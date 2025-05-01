@@ -6,7 +6,8 @@
 _if(true, function(){console.log("True")}, function(){console.log("false")})
 // Logs 'True' to the console.
 */
-let boolean = true;
+let boolean = 1;
+console.log(boolean)
 
 let funTrue = () => console.log('True');
 let funFalse = () => console.log('False');
